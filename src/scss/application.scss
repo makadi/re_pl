@@ -6,39 +6,15 @@
 
 body {
   margin: 0;
-  background-color: #57b183;
+  background-color: #ffffff;
   font-family: 'Oswald', sans-serif;
   overflow: hidden;
   width: 100vw;
 }
 
-.wrapper {
-  width: 100%;
-  height: 100%;
-}
-.line {
-  position: fixed;
-  left: 50vw;
-  width: 2px;
-  height: 80px;
-  top: 24vh;
-  background-color: white;
-}
-.text-wrap {
-  position: absolute;
-  width: 100vw;
-  height: 100%;
+.main-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
 }
-.text-wrap .text {
-  cursor: pointer;
-  position: relative;
-}
-.text-wrap span {
-  color: #e7e7e7;
-  font-size: 100px;
-  font-weight: 300;
-  padding: 0 2%;
-}
+
+

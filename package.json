@@ -2,7 +2,7 @@
   "name": "re_pl",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "start": "nodemon server.js",
     "webpack": "./node_modules/.bin/webpack -w",
@@ -15,7 +15,9 @@
     "express": "^4.16.2",
     "mysql": "^2.15.0",
     "react": "^16.2.0",
+    "react-bootstrap": "^0.32.1",
     "react-dom": "^16.2.0",
+    "react-md": "^1.2.11",
     "react-router": "^4.2.0"
   },
   "devDependencies": {

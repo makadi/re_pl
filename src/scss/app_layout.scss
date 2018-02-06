@@ -1,0 +1,28 @@
+.line {
+  position: fixed;
+  left: 50vw;
+  width: 2px;
+  height: 80px;
+  top: 24vh;
+  background-color: white;
+}
+.text-wrap {
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.text-wrap .text {
+  cursor: pointer;
+  position: relative;
+}
+.text-wrap span {
+  color: #d6d6d6;
+  font-size: 100px;
+  font-weight: 300;
+  padding: 0 2%;
+  z-index: 20;
+}

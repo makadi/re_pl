@@ -6,6 +6,7 @@ const app = express();
 
 app.use('/src', express.static('./src'));
 app.use('/build', express.static('./build'));
+app.use('/assets', express.static('./assets'));
 app.use(express.json());
 
 
