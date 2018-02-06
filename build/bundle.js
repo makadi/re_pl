@@ -7851,7 +7851,7 @@ exports = module.exports = __webpack_require__(30)(false);
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);", ""]);
 
 // module
-exports.push([module.i, "* {\n  box-sizing: border-box; }\n\nbody {\n  margin: 0;\n  background-color: #F2D7D3;\n  font-family: 'Oswald', sans-serif;\n  overflow: hidden;\n  width: 100vw; }\n\n.wrapper {\n  width: 100%;\n  height: 100%; }\n\n.line {\n  position: fixed;\n  left: 50vw;\n  width: 2px;\n  height: 80px;\n  top: 24vh;\n  background-color: white; }\n\n.text-wrap {\n  position: absolute;\n  width: 100vw;\n  height: 100%;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.text-wrap .text {\n  cursor: pointer;\n  position: relative; }\n\n.text-wrap span {\n  color: #fff9e1;\n  font-size: 100px;\n  font-weight: 300;\n  padding: 0 2%; }\n", ""]);
+exports.push([module.i, "* {\n  box-sizing: border-box; }\n\nbody {\n  margin: 0;\n  background-color: #57b183;\n  font-family: 'Oswald', sans-serif;\n  overflow: hidden;\n  width: 100vw; }\n\n.wrapper {\n  width: 100%;\n  height: 100%; }\n\n.line {\n  position: fixed;\n  left: 50vw;\n  width: 2px;\n  height: 80px;\n  top: 24vh;\n  background-color: white; }\n\n.text-wrap {\n  position: absolute;\n  width: 100vw;\n  height: 100%;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.text-wrap .text {\n  cursor: pointer;\n  position: relative; }\n\n.text-wrap span {\n  color: #e7e7e7;\n  font-size: 100px;\n  font-weight: 300;\n  padding: 0 2%; }\n", ""]);
 
 // exports
 
