@@ -1,5 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const db = require('./db');
 
 const app = express();
 
@@ -12,5 +13,5 @@ app.get('/', function(req, res) {
   res.sendFile(__dirname + '/src/html/index.html');
 });
 
-app.listen(3000, () => console.log('running on port 3000'));
 
+app.listen(3000, () => console.log('running on port 3000'));
