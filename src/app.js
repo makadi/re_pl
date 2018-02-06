@@ -3,11 +3,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import AppContainer from './js/app_container';
-import MediaPlayer from './js/media_player';
-import Playlists from './js/playlists';
-import Tracklist from './js/tracklist';
 
-import styles from './scss/application.scss';
+import styles from './scss/app_container.scss';
+import styles from './scss/media_player.scss';
+import styles from './scss/navbar.scss';
+import styles from './scss/playlists.scss';
+import styles from './scss/tracklist.scss';
+
 
 const render = () => {
   ReactDOM.render(
