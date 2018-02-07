@@ -17019,10 +17019,6 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(12);
-
-var _reactDom2 = _interopRequireDefault(_reactDom);
-
 var _navbar = __webpack_require__(156);
 
 var _navbar2 = _interopRequireDefault(_navbar);
@@ -17145,8 +17141,23 @@ var NavBar = function (_Component) {
           _reactBootstrap.Navbar.Collapse,
           null,
           _react2.default.createElement(
-            _reactBootstrap.Nav,
+            _reactBootstrap.Navbar.Text,
             { pullLeft: true },
+            'Signed in as: ',
+            _react2.default.createElement(
+              _reactBootstrap.Navbar.Link,
+              { href: '#' },
+              'Zoltan Makadi'
+            )
+          ),
+          _react2.default.createElement(
+            _reactBootstrap.Navbar.Text,
+            { pullLeft: true },
+            'Have a great day!'
+          ),
+          _react2.default.createElement(
+            _reactBootstrap.Nav,
+            { pullRight: true },
             _react2.default.createElement(
               _reactBootstrap.NavItem,
               { eventKey: 1, href: '#' },
@@ -17156,25 +17167,11 @@ var NavBar = function (_Component) {
               _reactBootstrap.NavItem,
               { eventKey: 2, href: '#' },
               'Discover'
-            )
-          ),
-          _react2.default.createElement(
-            _reactBootstrap.Nav,
-            { pullRight: true },
-            _react2.default.createElement(
-              _reactBootstrap.Navbar.Text,
-              null,
-              'Signed in as: ',
-              _react2.default.createElement(
-                _reactBootstrap.Navbar.Link,
-                { href: '#' },
-                'Zoltan Makadi'
-              )
             ),
             _react2.default.createElement(
-              _reactBootstrap.Navbar.Text,
-              { pullRight: true },
-              'Have a great day!'
+              _reactBootstrap.NavItem,
+              { eventKey: 3, href: '#' },
+              'Logout'
             )
           )
         )

@@ -1,7 +1,7 @@
 'use strict';
 
 import React, { Component } from 'react';
-import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
+import { Navbar, Nav, NavItem, NavDropdown, MenuItem, Button } from 'react-bootstrap';
 import styles from './scss/navbar.scss';
 
 export default class NavBar extends Component {
@@ -15,19 +15,22 @@ export default class NavBar extends Component {
           <Navbar.Toggle />
         </Navbar.Header>
         <Navbar.Collapse>
-          <Nav pullLeft>
+          <Navbar.Text pullLeft>
+            Signed in as: <Navbar.Link href="#">Zoltan Makadi</Navbar.Link>
+          </Navbar.Text>
+          <Navbar.Text pullLeft>
+            Have a great day!
+          </Navbar.Text>
+          <Nav pullRight>
             <NavItem eventKey={1} href="#">
               My Playlists
             </NavItem>
             <NavItem eventKey={2} href="#">
               Discover
             </NavItem>
-          </Nav>
-          <Nav pullRight>
-            <Navbar.Text>
-              Signed in as: <Navbar.Link href="#">Zoltan Makadi</Navbar.Link>
-            </Navbar.Text>
-            <Navbar.Text pullRight>Have a great day!</Navbar.Text>
+            <NavItem eventKey={3} href="#">
+                Logout
+            </NavItem>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

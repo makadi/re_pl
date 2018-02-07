@@ -1,7 +1,6 @@
 'use strict';
 
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 import NavBar from './navbar';
 import styles from './scss/app_container.scss';
 
