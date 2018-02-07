@@ -82,17 +82,7 @@ var _app_container = __webpack_require__(150);
 
 var _app_container2 = _interopRequireDefault(_app_container);
 
-var _app_container3 = __webpack_require__(301);
-
-var _app_container4 = _interopRequireDefault(_app_container3);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-// import styles from './scss/media_player.scss';
-// import styles from './scss/navbar.scss';
-// import styles from './scss/playlists.scss';
-// import styles from './scss/tracklist.scss';
-
 
 var render = function render() {
   _reactDom2.default.render(_react2.default.createElement(_app_container2.default, null), document.getElementById('root'));
@@ -16398,6 +16388,10 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
+var _app_container = __webpack_require__(301);
+
+var _app_container2 = _interopRequireDefault(_app_container);
+
 var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
@@ -16426,23 +16420,27 @@ var AppContainer = function (_Component) {
   _createClass(AppContainer, [{
     key: 'render',
     value: function render() {
-      // const layout = (
-      //   <div className="wrapper">
-      //     <div className="text-wrap">
-      //       <div className="text"><span>FXPLYR</span></div>
-      //     </div>
-      //     <div className="header">
-      //       <div className="burger-wrapper">
-      //         <div className="burger"></div>
-      //       </div>
-      //     </div>
-      //   </div>
-      // )
-
       return _react2.default.createElement(
         'div',
         { className: 'main-container' },
-        _react2.default.createElement(_navbar2.default, null)
+        _react2.default.createElement(_navbar2.default, null),
+        _react2.default.createElement(
+          'div',
+          { className: 'wrapper' },
+          _react2.default.createElement(
+            'div',
+            { className: 'text-wrap' },
+            _react2.default.createElement(
+              'div',
+              { className: 'text' },
+              _react2.default.createElement(
+                'span',
+                null,
+                'FXPLYR'
+              )
+            )
+          )
+        )
       );
     }
   }]);
@@ -16464,6 +16462,10 @@ Object.defineProperty(exports, "__esModule", {
 });
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _navbar = __webpack_require__(306);
+
+var _navbar2 = _interopRequireDefault(_navbar);
 
 var _react = __webpack_require__(1);
 
@@ -30019,7 +30021,7 @@ exports = module.exports = __webpack_require__(303)(false);
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);", ""]);
 
 // module
-exports.push([module.i, "* {\n  box-sizing: border-box; }\n\nbody {\n  margin: 0;\n  background-color: #ebebeb;\n  font-family: 'Oswald', sans-serif;\n  overflow: hidden;\n  width: 100vw; }\n\n.main-container {\n  display: flex;\n  flex-direction: column; }\n\n.navbar-logo {\n  height: 50px; }\n\n.line {\n  position: fixed;\n  left: 50vw;\n  width: 2px;\n  height: 80px;\n  top: 24vh;\n  background-color: white; }\n\n.text-wrap {\n  position: absolute;\n  width: 100vw;\n  height: 100%;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  flex-direction: column; }\n\n.text-wrap .text {\n  cursor: pointer;\n  position: relative; }\n\n.text-wrap span {\n  color: #d6d6d6;\n  font-size: 100px;\n  font-weight: 300;\n  padding: 0 2%;\n  z-index: 20; }\n", ""]);
+exports.push([module.i, "* {\n  box-sizing: border-box; }\n\nbody {\n  margin: 0;\n  background-color: #808080;\n  font-family: 'Oswald', sans-serif;\n  overflow: hidden;\n  width: 100vw; }\n\n.main-container {\n  display: flex;\n  flex-direction: column; }\n\n.navbar-logo {\n  height: 50px; }\n\n.line {\n  position: fixed;\n  left: 50vw;\n  width: 2px;\n  height: 80px;\n  top: 24vh;\n  background-color: white; }\n\n.text-wrap {\n  position: absolute;\n  width: 100vw;\n  height: 100%;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  flex-direction: column; }\n\n.text-wrap .text {\n  cursor: pointer;\n  position: relative; }\n\n.text-wrap span {\n  color: #d6d6d6;\n  font-size: 100px;\n  font-weight: 300;\n  padding: 0 2%;\n  z-index: 20; }\n", ""]);
 
 // exports
 
@@ -30582,6 +30584,70 @@ module.exports = function (css) {
 	// send back the fixed css
 	return fixedCss;
 };
+
+/***/ }),
+/* 306 */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(307);
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(304)(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {
+	module.hot.accept("!!../../node_modules/css-loader/index.js!../../node_modules/sass-loader/lib/loader.js!./navbar.scss", function() {
+		var newContent = require("!!../../node_modules/css-loader/index.js!../../node_modules/sass-loader/lib/loader.js!./navbar.scss");
+
+		if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+
+		var locals = (function(a, b) {
+			var key, idx = 0;
+
+			for(key in a) {
+				if(!b || a[key] !== b[key]) return false;
+				idx++;
+			}
+
+			for(key in b) idx--;
+
+			return idx === 0;
+		}(content.locals, newContent.locals));
+
+		if(!locals) throw new Error('Aborting CSS HMR due to changed css-modules locals.');
+
+		update(newContent);
+	});
+
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 307 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(303)(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
 
 /***/ })
 /******/ ]);
