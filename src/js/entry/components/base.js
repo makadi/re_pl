@@ -1,9 +1,8 @@
-import styles from '../../scss/entry.scss';
 import React, { PropTypes } from 'react';
 import { Link, IndexLink } from 'react-router';
 
 
-const Entry = ({ children }) => (
+const Base = ({ children }) => (
   <div>
     <div className="top-bar">
       <div className="top-bar-left">
@@ -26,4 +25,4 @@ Base.propTypes = {
   children: PropTypes.object.isRequired
 };
 
-export default Entry;
+export default Base;
