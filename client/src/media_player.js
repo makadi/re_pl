@@ -1,8 +1,7 @@
 'use strict';
 
-import styles from '../scss/media_player.scss';
 import React, { Component } from 'react';
-import AppContainer from './app_container';
+import styles from '../scss/media_player.scss';
 
 
 export default class MediaPlayer extends Component {

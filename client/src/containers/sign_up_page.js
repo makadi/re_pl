@@ -1,3 +1,5 @@
+'use strict';
+
 import React, { PropTypes } from 'react';
 import SignUpForm from '../components/sign_up_form.js';
 

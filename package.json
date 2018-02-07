@@ -2,7 +2,7 @@
   "name": "re_pl",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
     "start": "nodemon server.js",
     "webpack": "./node_modules/.bin/webpack -w",
@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.18.2",
     "express": "^4.16.2",
     "material-ui": "^0.20.0",
     "mysql": "^2.15.0",

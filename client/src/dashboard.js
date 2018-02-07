@@ -1,7 +1,7 @@
 'use strict';
 
-import styles from '../scss/dashboard.scss';
 import React, { Component } from 'react';
+import styles from '../scss/dashboard.scss';
 
 export default class Dashboard extends Component {
   render() {

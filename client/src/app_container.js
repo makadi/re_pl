@@ -1,8 +1,9 @@
 'use strict';
 
-import styles from '../scss/app_container.scss';
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 import NavBar from './navbar';
+import styles from './scss/app_container.scss';
 
 export default class AppContainer extends Component {
   render() {

@@ -1,7 +1,9 @@
+'use strict';
+
 import Base from './components/base.js';
 import HomePage from './components/home_page.js';
 import LoginPage from './containers/login_page.js';
-import SignUpPage from './containers/sigup_page.js';
+import SignUpPage from './containers/sign_up_page.js';
 
 
 const routes = {
