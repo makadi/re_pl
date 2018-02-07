@@ -8,10 +8,7 @@ export default class TrackList extends Component {
 
   render() {
     return (
-      <AppContainer>
-        <div className="tracklist-container">
-        </div>
-      </AppContainer>
+        <div className="tracklist-container"></div>
     );
   }
 }
