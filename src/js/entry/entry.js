@@ -1,5 +1,6 @@
 import React from 'react';
 import { Card, CardTitle } from 'material-ui/Card';
+import styles from '../../scss/entry.scss';
 
 
 export default class Entry extends Component {

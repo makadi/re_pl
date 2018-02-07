@@ -1,6 +1,4 @@
-'use strict';
-
-import styles from '../scss/login.scss';
+import styles from '../../scss/entry.scss';
 import React, { Component } from 'react';
 
 export default class Login extends Component {
