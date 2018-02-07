@@ -15,10 +15,20 @@ export default class NavBar extends Component {
           <Navbar.Toggle />
         </Navbar.Header>
         <Navbar.Collapse>
-          <Navbar.Text>
-            Signed in as: <Navbar.Link href="#">Zoltan Makadi</Navbar.Link>
-          </Navbar.Text>
-          <Navbar.Text pullRight>Have a great day!</Navbar.Text>
+          <Nav pullLeft>
+            <NavItem eventKey={1} href="#">
+              My Playlists
+            </NavItem>
+            <NavItem eventKey={2} href="#">
+              Discover
+            </NavItem>
+          </Nav>
+          <Nav pullRight>
+            <Navbar.Text>
+              Signed in as: <Navbar.Link href="#">Zoltan Makadi</Navbar.Link>
+            </Navbar.Text>
+            <Navbar.Text pullRight>Have a great day!</Navbar.Text>
+          </Nav>
         </Navbar.Collapse>
       </Navbar>
     );

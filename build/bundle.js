@@ -17145,19 +17145,37 @@ var NavBar = function (_Component) {
           _reactBootstrap.Navbar.Collapse,
           null,
           _react2.default.createElement(
-            _reactBootstrap.Navbar.Text,
-            null,
-            'Signed in as: ',
+            _reactBootstrap.Nav,
+            { pullLeft: true },
             _react2.default.createElement(
-              _reactBootstrap.Navbar.Link,
-              { href: '#' },
-              'Zoltan Makadi'
+              _reactBootstrap.NavItem,
+              { eventKey: 1, href: '#' },
+              'My Playlists'
+            ),
+            _react2.default.createElement(
+              _reactBootstrap.NavItem,
+              { eventKey: 2, href: '#' },
+              'Discover'
             )
           ),
           _react2.default.createElement(
-            _reactBootstrap.Navbar.Text,
+            _reactBootstrap.Nav,
             { pullRight: true },
-            'Have a great day!'
+            _react2.default.createElement(
+              _reactBootstrap.Navbar.Text,
+              null,
+              'Signed in as: ',
+              _react2.default.createElement(
+                _reactBootstrap.Navbar.Link,
+                { href: '#' },
+                'Zoltan Makadi'
+              )
+            ),
+            _react2.default.createElement(
+              _reactBootstrap.Navbar.Text,
+              { pullRight: true },
+              'Have a great day!'
+            )
           )
         )
       );
