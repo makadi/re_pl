@@ -1,29 +1,51 @@
+import { Route } from 'react-router-dom';
+import React, { Component } from 'react';
+import Collection from './collection';
+
 import Base from './components/base.js';
 import HomePage from './components/home_page.js';
 import LoginPage from './containers/login.js';
 import SignUpPage from './containers/sign_up.js';
 
 
-const routes = {
-  component: Base,
-  childRoutes: [
+class Routes extends Component {
+  constructor(props) {
+    super(props);
+    // testUserToken();
+  }
+  render() {
+    return (
+      <div>
+        <Route exact path="/" component={Profile} />
+        <Route path="/collection" component={Collection} />
+        <Route path="/profile" component={Profile} />
+      </div>
+    );
+  }
+}
 
-    {
-      path: '/',
-      component: HomePage
-    },
+// export default Routes;
 
-    {
-      path: '/login',
-      component: LoginPage
-    },
+// const routes = {
+//   component: Base,
+//   childRoutes: [
 
-    {
-      path: '/signup',
-      component: SignUpPage
-    }
+//     {
+//       path: '/',
+//       component: HomePage
+//     },
 
-  ]
-};
+//     {
+//       path: '/login',
+//       component: LoginPage
+//     },
 
-export default routes;
+//     {
+//       path: '/signup',
+//       component: SignUpPage
+//     }
+
+//   ]
+// };
+
+// export default routes;

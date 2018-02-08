@@ -19,6 +19,7 @@ app.use('/validator', authRoutes);
 
 app.get([
   '/',
+  '/dashboard',
   '/profile',
   '/collection',
   '/discover',
