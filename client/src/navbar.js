@@ -1,7 +1,5 @@
-'use strict';
-
 import React, { Component } from 'react';
-import { Navbar, Nav, NavItem, NavDropdown, MenuItem, Button } from 'react-bootstrap';
+import { Navbar, Nav, NavItem } from 'react-bootstrap';
 import styles from './scss/navbar.scss';
 
 export default class NavBar extends Component {
@@ -23,12 +21,15 @@ export default class NavBar extends Component {
           </Navbar.Text>
           <Nav pullRight>
             <NavItem eventKey={1} href="#">
-              My Playlists
+              Collection
             </NavItem>
             <NavItem eventKey={2} href="#">
               Discover
             </NavItem>
             <NavItem eventKey={3} href="#">
+              Settings
+            </NavItem>
+            <NavItem eventKey={4} href="#">
                 Logout
             </NavItem>
           </Nav>

@@ -1,5 +1,3 @@
-'use strict';
-
 import React, { Component } from 'react';
 import styles from '../scss/media_player.scss';
 
