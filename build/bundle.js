@@ -18411,6 +18411,10 @@ var _navbar = __webpack_require__(172);
 
 var _navbar2 = _interopRequireDefault(_navbar);
 
+var _profile = __webpack_require__(351);
+
+var _profile2 = _interopRequireDefault(_profile);
+
 var _app_container = __webpack_require__(102);
 
 var _app_container2 = _interopRequireDefault(_app_container);
@@ -18437,25 +18441,9 @@ var AppContainer = function (_Component) {
     value: function render() {
       return _react2.default.createElement(
         'div',
-        { className: 'main-container' },
+        null,
         _react2.default.createElement(_navbar2.default, null),
-        _react2.default.createElement(
-          'div',
-          { className: 'wrapper' },
-          _react2.default.createElement(
-            'div',
-            { className: 'text-wrap' },
-            _react2.default.createElement(
-              'div',
-              { className: 'text' },
-              _react2.default.createElement(
-                'span',
-                null,
-                'FXPLYR'
-              )
-            )
-          )
-        )
+        _react2.default.createElement(_profile2.default, null)
       );
     }
   }]);
@@ -35642,6 +35630,216 @@ module.exports = function hoistNonReactStatics(targetComponent, sourceComponent,
 
     return targetComponent;
 };
+
+/***/ }),
+/* 351 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactBootstrap = __webpack_require__(173);
+
+var _profile = __webpack_require__(352);
+
+var _profile2 = _interopRequireDefault(_profile);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Profile = function (_Component) {
+  _inherits(Profile, _Component);
+
+  function Profile(props) {
+    _classCallCheck(this, Profile);
+
+    var _this = _possibleConstructorReturn(this, (Profile.__proto__ || Object.getPrototypeOf(Profile)).call(this, props));
+
+    _this.props = {
+      userExample: {
+        name: 'Thisis Yourname',
+        email: 'thisis-youremail@address.com',
+        birth: '1989',
+        info: 'Basic information from you and your activities..',
+        genre: 'Ambient, Deep'
+      }
+    };
+    return _this;
+  }
+
+  _createClass(Profile, [{
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'div',
+        { className: 'profile-container' },
+        _react2.default.createElement(
+          _reactBootstrap.PageHeader,
+          null,
+          'Thisis Yourname ',
+          _react2.default.createElement(
+            'small',
+            null,
+            'About'
+          )
+        ),
+        _react2.default.createElement(
+          _reactBootstrap.Panel,
+          null,
+          _react2.default.createElement(
+            _reactBootstrap.Panel.Heading,
+            null,
+            'Panel heading without a title'
+          ),
+          _react2.default.createElement(
+            _reactBootstrap.Panel.Body,
+            null,
+            'Panel content'
+          )
+        ),
+        _react2.default.createElement(
+          _reactBootstrap.Panel,
+          null,
+          _react2.default.createElement(
+            _reactBootstrap.Panel.Heading,
+            null,
+            'Panel heading without a title'
+          ),
+          _react2.default.createElement(
+            _reactBootstrap.Panel.Body,
+            null,
+            'Panel content'
+          )
+        ),
+        _react2.default.createElement(
+          _reactBootstrap.Panel,
+          null,
+          _react2.default.createElement(
+            _reactBootstrap.Panel.Heading,
+            null,
+            'Panel heading without a title'
+          ),
+          _react2.default.createElement(
+            _reactBootstrap.Panel.Body,
+            null,
+            'Panel content'
+          )
+        ),
+        _react2.default.createElement(
+          _reactBootstrap.Panel,
+          null,
+          _react2.default.createElement(
+            _reactBootstrap.Panel.Heading,
+            null,
+            'Panel heading without a title'
+          ),
+          _react2.default.createElement(
+            _reactBootstrap.Panel.Body,
+            null,
+            'Panel content'
+          )
+        ),
+        _react2.default.createElement(
+          _reactBootstrap.Panel,
+          null,
+          _react2.default.createElement(
+            _reactBootstrap.Panel.Heading,
+            null,
+            'Panel heading without a title'
+          ),
+          _react2.default.createElement(
+            _reactBootstrap.Panel.Body,
+            null,
+            'Panel content'
+          )
+        )
+      );
+    }
+  }]);
+
+  return Profile;
+}(_react.Component);
+
+exports.default = Profile;
+
+/***/ }),
+/* 352 */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(353);
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(104)(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {
+	module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/sass-loader/lib/loader.js!./profile.scss", function() {
+		var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/sass-loader/lib/loader.js!./profile.scss");
+
+		if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+
+		var locals = (function(a, b) {
+			var key, idx = 0;
+
+			for(key in a) {
+				if(!b || a[key] !== b[key]) return false;
+				idx++;
+			}
+
+			for(key in b) idx--;
+
+			return idx === 0;
+		}(content.locals, newContent.locals));
+
+		if(!locals) throw new Error('Aborting CSS HMR due to changed css-modules locals.');
+
+		update(newContent);
+	});
+
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 353 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(103)(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
 
 /***/ })
 /******/ ]);
