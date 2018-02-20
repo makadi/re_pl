@@ -8,7 +8,8 @@ export default class AppContainer extends Component {
     return (
       <div>
         <NavBar />
-        <Profile />
+        <div className="content-container">
+          <Profile />
         {/* <div className="main-container">
           <div className="wrapper">
             <div className="text-wrap">
@@ -16,6 +17,8 @@ export default class AppContainer extends Component {
             </div>
           </div>
         </div> */}
+        </div>
+        
       </div>
     );
   }
