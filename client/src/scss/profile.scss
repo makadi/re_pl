@@ -1,0 +1,73 @@
+.profile-container {
+  font-family: 'Roboto';
+  font-weight: 300;
+  display: flex;
+  width: 100%;
+  padding: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  background: rgb(255, 255, 255);
+  max-width: 1300px;
+  margin: auto;
+  min-width: 800px;
+}
+.info-container {
+  font-size: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.page-header{
+  font-size: 3rem;
+  font-weight: 500;
+  margin-top: 1.2rem;
+  margin-bottom: 3rem;
+}
+.info-head {
+  font-weight: 400;
+  padding-top: 0.5rem;
+  margin-top: 0.5rem;
+  padding-bottom: 0.8rem;
+  margin-bottom: 0.8rem;
+  border-bottom: solid rgb(204, 204, 204) 0.2px;
+  opacity: 0.5;
+}
+.info-row {
+  font-weight: 400;
+  height: 1.8rem;
+  width: 100%;
+  margin-bottom: 0.8rem;
+  color: rgb(44, 44, 44);
+}
+.email {
+  font-weight: 500;
+}
+.add-email-button {
+  width: 16rem;
+  font-size: 1.4rem;
+  color: #2c2c2c;
+  background: #fafafa;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+  margin-top: 0.8rem;
+  opacity: 0.7;
+}
+
+.profile-sidebar {
+  width: 50%;
+  font-size: 1.4rem;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+.sc {
+  height: 200px;
+  width: 200px;
+  opacity: 0.3;
+}
+.sc:hover {
+  opacity: 1.0;
+  transition: 0.8s;
+  
+}
+
