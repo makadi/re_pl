@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import { PageHeader } from 'react-bootstrap';
-import { Panel } from 'react-bootstrap';
 import styles from './scss/profile.scss';
 
 
@@ -38,8 +36,6 @@ export default class Profile extends Component {
           <div className="info-row">{userExample.genre}</div>
           <div className="info-head">About you</div>
           <div className="info-row">{userExample.info}</div>
-        </div>
-        <div className="profile-sidebar">
         </div>
       </div>
     );

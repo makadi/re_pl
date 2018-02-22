@@ -6,7 +6,8 @@
   "scripts": {
     "start": "nodemon --use_strict server.js",
     "webpack": "./node_modules/.bin/webpack -w",
-    "test": "mocha --compilers babel-core/register ./test/*test.js"
+    "test": "mocha --compilers babel-core/register ./test/*test.js",
+    "dev": "webpack-dev-server --inline --hot"
   },
   "keywords": [],
   "author": "",
@@ -26,7 +27,8 @@
     "react-router-dom": "^4.2.2",
     "react-router-redux": "^4.0.8",
     "react-tap-event-plugin": "^3.0.2",
-    "validator": "^9.4.0"
+    "validator": "^9.4.0",
+    "webpack-dev-server": "^2.11.1"
   },
   "devDependencies": {
     "babel": "^6.23.0",
