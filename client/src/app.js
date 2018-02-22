@@ -1,15 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import AppLayout from './app_layout.js';
-// import Routes from './routes';
-import { Router } from 'react-router-dom';
+import { Router, Route } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 
 
-const render = () => {
-  ReactDOM.render(
-    <AppLayout />,
-    document.getElementById('root')
-  );
-};
+import Layout from './layout';
+import Collection from './collection';
+import Discover from './discover';
+import Settings from './settings';
 
-render();
+const app = document.getElementById('root')
+
+ReactDOM.render(
+  <BrowserRouter>
+    <div>
+      <Route exact path="/" component={Layout} />
+      <Route path="/collection" component={Collection} />
+      <Route path="/discover" component={Discover} />
+      <Route path="/settings" component={Settings} />
+    </div>
+  </BrowserRouter>,
+app);

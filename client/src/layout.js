@@ -1,17 +1,16 @@
 import React, { Component } from 'react';
 import NavBar from './navbar';
-import Profile from './profile';
-import styles from './scss/app_layout.scss';
+import Settings from './settings';
+import styles from './scss/layout.scss';
 
-export default class AppLayout extends Component {
+export default class Layout extends Component {
   render() {
     return (
       <div>
         <NavBar />
         <div className="content-container">
-          <Profile />
+          {this.props.children}
         </div>
-        
       </div>
     );
   }
