@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Navbar, Nav, NavItem } from 'react-bootstrap';
+import { LinkContainer } from 'react-router-bootstrap'
 import styles from './scss/navbar.scss';
+
 
 export default class NavBar extends Component {
   constructor(props) {
@@ -38,21 +40,27 @@ export default class NavBar extends Component {
         </Navbar.Header>
         <Navbar.Collapse>
           <Navbar.Text pullLeft>
-            Signed in as: <Navbar.Link onClick={this.handleSettings} href="./settings">Zoltan Makadi</Navbar.Link>
+            Signed in as: <Navbar.Link to="/settings" onClick={this.handleSettings} href="./settings">Zoltan Makadi</Navbar.Link>
           </Navbar.Text>
           <Navbar.Text pullLeft>
             Have a great day!
           </Navbar.Text>
           <Nav pullRight>
-            <NavItem onClick={this.handleCollection} eventKey={1} href="./collection">
-              Collection
-            </NavItem>
-            <NavItem onClick={this.handleDiscover} eventKey={2} href="./discover">
-              Discover
-            </NavItem>
-            <NavItem onClick={this.onMenuClick} eventKey={3} href="./settings">
-              Settings
-            </NavItem>
+            <LinkContainer to="/collection" activeClassName="navbar-active">
+              <NavItem onClick={this.handleCollection} eventKey={1} href="./collection">
+                Collection
+              </NavItem>
+            </LinkContainer>
+            <LinkContainer to="/discover" activeClassName="navbar-active">
+              <NavItem onClick={this.handleDiscover} eventKey={2} href="./discover">
+                Discover
+              </NavItem>
+            </LinkContainer>
+            <LinkContainer to="/settings" activeClassName="navbar-active">
+              <NavItem onClick={this.onMenuClick} eventKey={3} href="./settings">
+                Settings
+              </NavItem>
+            </LinkContainer>
             <NavItem onClick={this.handleLogout} eventKey={4} href="#">
                 Logout
             </NavItem>
