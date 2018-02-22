@@ -7,7 +7,6 @@ import { routerReducer, routerMiddleware } from 'react-router-redux';
 const history = createHistory();
 
 const reducers = combineReducers({
-  dashboard: dashboardReducer
 });
 
 const middleWare = applyMiddleware(thunk, routerMiddleware(history));
