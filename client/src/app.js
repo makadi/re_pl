@@ -4,6 +4,7 @@ import { Router, Route } from 'react-router-dom';
 import { BrowserRouter } from 'react-router-dom';
 import { createLogger } from 'redux-logger';
 import { Provider } from 'react-redux';
+import store from './store';
 import Layout from './components/layout';
 import Dashboard from './components/dashboard/dashboard';
 import Collection from './components/collection/collection';
