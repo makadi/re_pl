@@ -31,7 +31,7 @@ export default class NavBar extends Component {
 
   render() {
     return (
-      <Navbar inverse>
+      <Navbar>
         <Navbar.Header>
           <Navbar.Brand>
             <a href="./dashboard">FXPLYR</a>

@@ -1,3 +1,32 @@
+.navbar {
+  margin-bottom: 0px;
+  margin-bottom: 3px;
+}
+
+.navbar-header {
+  background: #f8f8f8;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: white;
+}
+
+.navbar-brand  {
+  max-height: 48px;
+}
+.navbar-default .navbar-brand {
+  background: rgb(180, 105, 105);
+  color: white;
+}
+.navbar-default .navbar-brand:hover {
+  background: rgb(180, 105, 105);
+  color: white;
+  filter: brightness(110%);
+}
+.navbar-brand:hover {
+  filter: brightness(105%);
+}
+
 .navbar-active {
   background: rgb(56, 56, 56);
 }
