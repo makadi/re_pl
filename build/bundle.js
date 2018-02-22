@@ -18368,9 +18368,9 @@ var NavBar = function (_Component) {
 
     var _this = _possibleConstructorReturn(this, (NavBar.__proto__ || Object.getPrototypeOf(NavBar)).call(this, props));
 
-    _this.handleCollection = _this.handleCollection.bind(_this);
     _this.handleDiscover = _this.handleDiscover.bind(_this);
-    _this.handleProfile = _this.handleProfile.bind(_this);
+    _this.handleCollection = _this.handleCollection.bind(_this);
+    _this.handleSettings = _this.handleSettings.bind(_this);
     _this.handleLogout = _this.handleLogout.bind(_this);
     return _this;
   }
@@ -18384,11 +18384,6 @@ var NavBar = function (_Component) {
     key: 'handleDiscover',
     value: function handleDiscover() {
       console.log('handleDiscover');
-    }
-  }, {
-    key: 'handleProfile',
-    value: function handleProfile() {
-      console.log('handleProfile');
     }
   }, {
     key: 'handleSettings',
@@ -18414,7 +18409,7 @@ var NavBar = function (_Component) {
             null,
             _react2.default.createElement(
               'a',
-              { href: './dashboard' },
+              { href: './discover' },
               'FXPLYR'
             )
           ),
@@ -18429,7 +18424,7 @@ var NavBar = function (_Component) {
             'Signed in as: ',
             _react2.default.createElement(
               _reactBootstrap.Navbar.Link,
-              { onClick: this.handleProfile, href: './profile' },
+              { onClick: this.handleSettings, href: './settings' },
               'Zoltan Makadi'
             )
           ),

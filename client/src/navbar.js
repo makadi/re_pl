@@ -5,9 +5,9 @@ import styles from './scss/navbar.scss';
 export default class NavBar extends Component {
   constructor(props) {
     super(props);
-    this.handleCollection = this.handleCollection.bind(this);
     this.handleDiscover = this.handleDiscover.bind(this);
-    this.handleProfile = this.handleProfile.bind(this);
+    this.handleCollection = this.handleCollection.bind(this);
+    this.handleSettings = this.handleSettings.bind(this);
     this.handleLogout = this.handleLogout.bind(this);
   }
 
@@ -17,10 +17,6 @@ export default class NavBar extends Component {
 
   handleDiscover() {
     console.log('handleDiscover');
-  }
-
-  handleProfile() {
-    console.log('handleProfile');
   }
 
   handleSettings() {
@@ -36,13 +32,13 @@ export default class NavBar extends Component {
       <Navbar inverse>
         <Navbar.Header>
           <Navbar.Brand>
-            <a href="./dashboard">FXPLYR</a>
+            <a href="./discover">FXPLYR</a>
           </Navbar.Brand>
           <Navbar.Toggle />
         </Navbar.Header>
         <Navbar.Collapse>
           <Navbar.Text pullLeft>
-            Signed in as: <Navbar.Link onClick={this.handleProfile} href="./profile">Zoltan Makadi</Navbar.Link>
+            Signed in as: <Navbar.Link onClick={this.handleSettings} href="./settings">Zoltan Makadi</Navbar.Link>
           </Navbar.Text>
           <Navbar.Text pullLeft>
             Have a great day!
