@@ -21,7 +21,8 @@ app.get([
   '/dashboard',
   '/collection',
   '/discover',
-  '/settings'
+  '/settings',
+  '/login'
 ], function(req, res) {
   res.sendFile(__dirname + '/server/static/index.html');
 });
