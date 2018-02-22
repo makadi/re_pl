@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import styles from './scss/dashboard.scss';
-import Layout from './layout';
+import styles from '../../styles/dashboard.scss';
+import Layout from '../layout';
 
 
 export default class Dashboard extends Component {

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import styles from './scss/settings.scss';
-import Layout from './layout';
+import styles from '../../styles/settings.scss';
+import Layout from '../layout';
 
 
 export default class Settings extends Component {

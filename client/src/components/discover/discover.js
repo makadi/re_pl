@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import styles from './scss/discover.scss';
-import Layout from './layout';
+import styles from '../../styles/discover.scss';
+import Layout from '../layout';
 
 
 export default class Discover extends Component {

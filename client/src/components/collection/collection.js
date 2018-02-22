@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import styles from './scss/collection.scss';
-import Layout from './layout';
+import styles from '../../styles/collection.scss';
+import Layout from '../layout';
 
 
 export default class Collection extends Component {
