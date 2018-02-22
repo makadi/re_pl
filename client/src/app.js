@@ -8,6 +8,7 @@ import Layout from './layout';
 import Collection from './collection';
 import Discover from './discover';
 import Settings from './settings';
+import Dashboard from './dashboard';
 
 const app = document.getElementById('root')
 
@@ -16,6 +17,7 @@ ReactDOM.render(
     <div>
       <Route exact path="/" component={Layout} />
       <Route path="/collection" component={Collection} />
+      <Route path="/dashboard" component={Dashboard} />
       <Route path="/discover" component={Discover} />
       <Route path="/settings" component={Settings} />
     </div>

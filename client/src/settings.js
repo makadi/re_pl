@@ -23,7 +23,7 @@ export default class Settings extends Component {
     
     return (
       <Layout>
-        <div className="profile-container">
+        <div className="settings-container">
           <div className="info-container">
             <div className="page-header">Settings</div>
             <div className="info-head">E-mail addresses</div>

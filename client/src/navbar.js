@@ -34,7 +34,7 @@ export default class NavBar extends Component {
       <Navbar inverse>
         <Navbar.Header>
           <Navbar.Brand>
-            <a href="./discover">FXPLYR</a>
+            <a href="./dashboard">FXPLYR</a>
           </Navbar.Brand>
           <Navbar.Toggle />
         </Navbar.Header>

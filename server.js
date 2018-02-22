@@ -8,8 +8,7 @@ const app = express();
 app.use(express.json());
 
 app.use('/server/static/', express.static('./server/static/'));
-app.use('/client/assets', express.static('./client/assets'));
-app.use('/assets', express.static('./assets'));
+app.use('/client', express.static('./client'));
 app.use('/build', express.static('./build'));
 
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -19,6 +18,7 @@ app.use('/validator', authRoutes);
 
 app.get([
   '/',
+  '/dashboard',
   '/collection',
   '/discover',
   '/settings'
