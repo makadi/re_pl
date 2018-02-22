@@ -1,6 +1,7 @@
 .navbar {
   margin-bottom: 0px;
   margin-bottom: 3px;
+  max-height: 51px;
 }
 
 .navbar-header {
@@ -27,6 +28,39 @@
   filter: brightness(105%);
 }
 
+.collapsed {
+  background: rgb(187, 187, 187);
+}
+.navbar-toggle {
+  background: #f8f8f8;
+}
+.navbar-default .navbar-toggle {
+  border: none;
+}
+.navbar-toggle .icon-bar {
+  height: 3px;
+}
+
+.navbar-collapse > ul > li:hover {
+  border-bottom: 2px solid  rgb(180, 105, 105);
+  max-height: 50px;
+}
+.in > ul > li:hover {
+  border-bottom: none;
+}
+.navbar-default .navbar-nav > li:nth-child(4) > a {
+  color: rgb(199, 119, 119);
+}
+.navbar-default .navbar-nav > li:nth-child(4) > a:hover {
+  color: rgb(177, 59, 59);
+}
+.navbar-default .navbar-nav > li:nth-child(4) > a:active {
+
+}
+
 .navbar-active {
-  background: rgb(56, 56, 56);
+  border-bottom: 2px solid  rgb(180, 105, 105);
+  background: rgb(238, 238, 238);
+  max-height: 50px;
+  
 }
