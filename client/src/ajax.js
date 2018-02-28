@@ -24,4 +24,17 @@ function getPlaylists() {
   });
 }
 
-module.exports = {getPlaylists};
+const getTracklist = function() {
+  console.log('getTracksAjax');
+  let url = 'http://localhost:3000/tracks';
+  return mainAjax({
+    method: 'GET',
+    url: url,
+    body: ''
+  });
+}
+
+module.exports = {
+  getPlaylists,
+  getTracklist
+};
