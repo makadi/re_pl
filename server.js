@@ -1,6 +1,5 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-
 const db = require('./db');
 
 const app = express();
@@ -25,6 +24,15 @@ app.get([
   '/login'
 ], function(req, res) {
   res.sendFile(__dirname + '/server/static/index.html');
+});
+
+app.get('/playlists', function(req, res) {
+  db.getPlaylists()
+    .then(data => res.json(data))
+    .catch(e => {
+      console.log(e);
+      res.status(500).send(e.code);
+    });
 });
 
 
