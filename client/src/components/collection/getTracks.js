@@ -9,6 +9,19 @@ const getTracklistData = function() {
   });
 }
 
+const createTracklistElements = function(tracks) {
+  const $tracklist = document.querySelector('.tracks-container');
+  $tracklist.innerHTML = '';
+  tracks.forEach(function(track, index) {
+    const trackRow = document.createElement('li');
+    trackRow.innerHTML = `<span>${index + 1}</span>
+                          <span class="tn">${track.name}</span>
+                          <span>${track.length}</span>`;
+    $tracklist.appendChild(trackRow);
+  })
+}
+
 module.exports = {
-  getTracklistData
+  getTracklistData,
+  createTracklistElements
 };

@@ -20,7 +20,7 @@ export default class Collection extends Component {
         <div className="collection-container">
           <h1>COLLECTION</h1>
           <ul className="playlists-container">Playlists</ul>
-          <ul className="tracklist-container">Tracklist</ul>
+          <ul className="tracks-container">Tracklist</ul>
         </div>
       </Layout>
     );
