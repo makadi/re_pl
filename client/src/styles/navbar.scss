@@ -1,13 +1,14 @@
+
+
+// Desktop
+
 .navbar {
   margin-bottom: 0px;
   margin-bottom: 3px;
-  max-height: 51px;
 }
-
 .navbar-header {
   background: #f8f8f8;
 }
-
 .navbar-inverse .navbar-nav > li > a {
   color: white;
 }
@@ -31,6 +32,26 @@
 .collapsed {
   background: rgb(187, 187, 187);
 }
+.navbar-collapse > ul > li:hover {
+  border-bottom: 2px solid  rgb(180, 105, 105);
+  max-height: 50px;
+}
+
+.navbar-default .navbar-nav > li:nth-child(4) > a {
+  color: rgb(199, 119, 119);
+}
+.navbar-default .navbar-nav > li:nth-child(4) > a:hover {
+  color: rgb(177, 59, 59);
+}
+.navbar-collapse > ul > .navbar-active {
+  border-bottom: 2px solid  rgb(180, 105, 105);
+  background: rgb(238, 238, 238);
+  max-height: 50px;
+}
+
+
+// Mobile
+
 .navbar-toggle {
   background: #f8f8f8;
 }
@@ -41,26 +62,16 @@
   height: 3px;
 }
 
-.navbar-collapse > ul > li:hover {
-  border-bottom: 2px solid  rgb(180, 105, 105);
-  max-height: 50px;
-}
 .in > ul > li:hover {
-  border-bottom: none;
+  border: none;
 }
-.navbar-default .navbar-nav > li:nth-child(4) > a {
-  color: rgb(199, 119, 119);
-}
-.navbar-default .navbar-nav > li:nth-child(4) > a:hover {
-  color: rgb(177, 59, 59);
-}
-.navbar-default .navbar-nav > li:nth-child(4) > a:active {
-
-}
-
-.navbar-active {
+.in > ul > .navbar-active {
   border-bottom: 2px solid  rgb(180, 105, 105);
   background: rgb(238, 238, 238);
   max-height: 50px;
-  
+}
+.in > ul > .navbar-active:hover {
+  border-bottom: 2px solid  rgb(180, 105, 105);
+  background: rgb(238, 238, 238);
+  max-height: 50px;
 }
