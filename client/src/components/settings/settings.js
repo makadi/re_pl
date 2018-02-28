@@ -24,8 +24,8 @@ export default class Settings extends Component {
     return (
       <Layout>
         <div className="settings-container">
+          <h1>SETTINGS</h1>
           <div className="info-container">
-            <div className="page-header">Settings</div>
             <div className="info-head">E-mail addresses</div>
             <div className="info-row email">{userExample.email.primary} (Primary)</div>
             <div className="info-row email">{userExample.email.secondary}</div>

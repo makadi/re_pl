@@ -2,15 +2,15 @@
   font-family: 'Roboto';
   font-weight: 300;
   display: flex;
+  flex-direction: column;
   width: 100%;
-  padding: 2rem;
-  padding-top: 2rem;
   padding-bottom: 4rem;
-  background: rgb(255, 255, 255);
+  background: bisque;
   max-width: 1300px;
   margin: auto;
 }
 .info-container {
+  padding: 2rem;  
   font-size: 1.4rem;
   display: flex;
   flex-direction: column;
