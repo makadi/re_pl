@@ -35,5 +35,13 @@ app.get('/playlists', function(req, res) {
     });
 });
 
+app.get('/tracks', function(req, res) {
+  db.getAllTracks()
+      .then(data => res.json(data))
+      .catch(e => {
+        console.log(e);
+        res.status(500).send(e.code);
+      });
+});
 
 app.listen(3000, () => console.log('running on port 3000'));
