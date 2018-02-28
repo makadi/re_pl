@@ -2,13 +2,16 @@ import React, { Component } from 'react';
 import styles from '../../styles/collection.scss';
 import Layout from '../layout';
 import { getPlaylistData, createPlaylistElements } from './getCollection';
-import { getPlaylists } from '../../ajax';
+import { getTracklistData } from './getTracks';
+
+import { getPlaylists, getTracklist } from '../../ajax';
 
 
 export default class Collection extends Component {
   constructor(props) {
     super(props);
     getPlaylistData();
+    getTracklistData();
   }
 
   render() {
