@@ -14,3 +14,25 @@ connection.connect(function (err){
   };
   console.log('connected to db');
 });
+
+const dbQuery = function(query) {
+  return new Promise(function(resolve, reject) {
+    connection.query(query, 
+      function(err, results) {
+          if (err) {
+               reject(err);
+          } else {
+              resolve(results);
+          }
+    });
+  });
+}
+
+const getPlaylists = function() {
+  console.log('getAllPlaylistsQueryString');
+  return dbQuery(`SELECT * from playlist;`);
+}
+
+module.exports = {
+  getPlaylists
+}
